@@ -20,9 +20,20 @@ namespace BorrowLanded.Controllers
             return View(objList);
         }
 
+        //GET- Create
         public IActionResult Create()
         {
             return View();
+        }
+
+        //POST-Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Item obj)
+        {
+            _db.Item.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
