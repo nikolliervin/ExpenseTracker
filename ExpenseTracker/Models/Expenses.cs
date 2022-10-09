@@ -7,7 +7,10 @@ namespace BorrowLanded.Models
         [Key]
         public int Id { get; set; }
 
+        public string ExpenseName { get; set; }
+
         public string ExpenseType { get; set; }
+
 
         public double Amount { get; set; }
 

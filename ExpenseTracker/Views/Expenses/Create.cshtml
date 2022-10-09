@@ -1,7 +1,28 @@
-﻿
-@{
-    ViewData["Title"] = "Create";
-}
+﻿@*
 
-<h1>Create</h1>
 
+
+@model BorrowLanded.Models.Expenses;
+
+
+<h1 class="align-content-center">Create Expense</h1>
+
+<div class="mt-3">
+
+<form method="post" asp-action="Create">
+
+<label asp-for="Expense" class="mt-3"></label>
+<input asp-for="ItemName" type="text" class="form-control mt-1" placeholder="Item Name"/>
+<label asp-for="Borrower" class="mt-3"></label>
+<input asp-for="Borrower" type="text" class="form-control form-control-solid mt-1" placeholder="Borrower"/>
+<label asp-for="Lender" class="mt-3"></label>
+<input asp-for="Lender" type="text" class="form-control form-control-transparent mt-1" placeholder="Lender"/>
+
+<button class="btn btn-primary btn-light mt-3" type="submit">Create</button>
+</form>
+
+
+</div>
+
+
+*@
