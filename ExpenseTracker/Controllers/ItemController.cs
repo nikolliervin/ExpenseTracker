@@ -19,5 +19,10 @@ namespace BorrowLanded.Controllers
             IEnumerable<Item> objList = _db.Item;
             return View(objList);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

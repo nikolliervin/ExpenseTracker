@@ -6,8 +6,8 @@
     <h1 class="m-2">Items</h1>
 
     </div>
-    <div class="col-6">
-    <button class="btn btn-primary">Crete New Item</button>
+    <div class="col-6 text-right">
+    <a asp-controller="Item" asp-action="Create" class="btn btn-primary">Create New Item</a>
 
     </div>
     </div>
@@ -31,9 +31,9 @@
       @foreach(var item in Model){
      <tr>
       <th scope="row">@item.Id</th>
-      <th scope="row"></th>
+      <th scope="row">@item.ItemName</th>
       <td>@item.Borrower</td>
-      <td>Not Found</td>
+      <td>@item.Lender</td>
       <td></td>
     </tr>
         
