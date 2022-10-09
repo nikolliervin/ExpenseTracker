@@ -11,5 +11,7 @@ namespace BorrowLanded.Data
         }
 
         public DbSet<Item> Item { get; set; }
+
+        public DbSet<Expenses> Expenses { get; set; }
     }
 }
