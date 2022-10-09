@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseTracker", "ExpenseTracker\ExpenseTracker.csproj", "{3BE68C68-7A1A-467E-B128-095270E7664A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorrowLanded", "ExpenseTracker\BorrowLanded.csproj", "{3BE68C68-7A1A-467E-B128-095270E7664A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
