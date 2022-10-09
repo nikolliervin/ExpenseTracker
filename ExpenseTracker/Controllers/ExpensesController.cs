@@ -20,5 +20,10 @@ namespace BorrowLanded.Controllers
             return View(objList);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+
     }
 }
