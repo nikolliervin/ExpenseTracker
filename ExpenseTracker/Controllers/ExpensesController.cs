@@ -42,7 +42,7 @@ namespace BorrowLanded.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public IActionResult Delete(int? id)
+        public IActionResult DeletePost(int? id)
         {
             var obj = _db.Expenses.Find(id);
             if (obj == null)
@@ -61,6 +61,16 @@ namespace BorrowLanded.Controllers
         }
 
         //Get Delete
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
+            var obj = _db.Expenses.Find(id);
+
+            if (obj == null)
+                return NotFound();
+            return View(obj);
+        }
 
 
     }
