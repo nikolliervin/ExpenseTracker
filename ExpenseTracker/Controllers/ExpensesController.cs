@@ -38,5 +38,30 @@ namespace BorrowLanded.Controllers
             return View(obj);
         }
 
+        //Post Delete
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Delete(int? id)
+        {
+            var obj = _db.Expenses.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                _db.Remove(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+
+
+        }
+
+        //Get Delete
+
+
     }
 }
