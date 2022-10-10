@@ -25,6 +25,8 @@ namespace BorrowLanded.Controllers
             return View();
         }
 
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
         public IActionResult Create(Expenses obj)
         {
             _db.Add(obj);
