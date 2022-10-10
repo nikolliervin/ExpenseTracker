@@ -25,5 +25,12 @@ namespace BorrowLanded.Controllers
             return View();
         }
 
+        public IActionResult Create(Expenses obj)
+        {
+            _db.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
