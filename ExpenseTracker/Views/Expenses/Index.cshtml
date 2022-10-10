@@ -23,8 +23,8 @@
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Expense Name</th>
-      <th scope="col">Expense Amount</th>
       <th scope="col">Expense Type</th>
+      <th scope="col">Expense Amount</th>
       
     </tr>
   </thead>
@@ -33,6 +33,7 @@
       @foreach(var item in Model){
      <tr>
       <th scope="row">@item.Id</th>
+      <th scope="row">@item.ExpenseName</th>
       <th scope="row">@item.ExpenseType</th>
       <td >@item.Amount</td>
       <td></td>

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BorrowLanded.Models
 {
@@ -7,8 +8,10 @@ namespace BorrowLanded.Models
         [Key]
         public int Id { get; set; }
 
+        [DisplayName("Expense Name")]
         public string ExpenseName { get; set; }
 
+        [DisplayName("Expense Type")]
         public string ExpenseType { get; set; }
 
 
