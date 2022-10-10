@@ -64,14 +64,20 @@ namespace BorrowLanded.Controllers
         public IActionResult Delete(int? id)
         {
             if (id == null)
+            {
                 return NotFound();
+
+            }
             var obj = _db.Expenses.Find(id);
 
             if (obj == null)
+            {
                 return NotFound();
+            }
             return View(obj);
+
+
+
         }
-
-
     }
 }
